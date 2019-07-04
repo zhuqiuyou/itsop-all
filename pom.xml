@@ -7,6 +7,11 @@
     <groupId>com.clouds.zh</groupId>
     <artifactId>itsop-all</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+    </parent>
     <packaging>pom</packaging>
     <name>itsop-all</name>
     <url>https://github.com/zhuqiuyou/itsop-all</url>
@@ -17,7 +22,36 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.1.6.RELEASE</spring-boot.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <itsop.version>1.0-SNAPSHOT</itsop.version>
     </properties>
+
+    <modules>
+        <module>itsop-common</module>
+        <module>itsop-modules-domamin</module>
+        <module>itsop-eureka-server</module>
+        <module>itsop-config-server</module>
+    </modules>
+
+    <dependencies>
+
+        <!--配置中心 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!--监控 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -46,14 +80,24 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
                 <configuration>
-                    <showWarnings>true</showWarnings>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <!-- resource -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
 
             <!-- install -->
@@ -137,7 +181,6 @@
     </repositories>
 
     <pluginRepositories>
-
         <pluginRepository>
             <id>aliyun-repos</id>
             <name>Aliyun Repository</name>
