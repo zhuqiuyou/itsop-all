@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: itsop-config-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config/ # 搜索src/main/resource 下的properties文件夹下的文件
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
