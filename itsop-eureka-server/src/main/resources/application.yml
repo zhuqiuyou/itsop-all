@@ -1,12 +1,6 @@
 spring:
-  application:
-    name: itsop-eureka-server
   profiles:
-      active: dev
-  security:
-    user:
-      name: itsop #定义用户名
-      password: itsop123 #定义密码
+    active: dev
 
 management:
   endpoints:

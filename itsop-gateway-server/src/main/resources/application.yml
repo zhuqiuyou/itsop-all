@@ -1,0 +1,25 @@
+server:
+  port: 9100
+
+spring:
+  application:
+    name: itsop-gateway-server
+  zipkin:
+    base-url: http://localhost:9411
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    api-user:
+      path: /api-user/**
+      serviceId: itsop-user-server
+    api-web:
+      path: /api-web/**
+      serviceId: itsop-webapi-server
