@@ -9,7 +9,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.clouds.zh</groupId>
     <artifactId>itsop-webapi-server</artifactId>
     <packaging>jar</packaging>
     <version>${itsop.version}</version>
@@ -60,6 +59,11 @@
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.clouds.zh.common</groupId>
+            <artifactId>itsop-common-swagger2</artifactId>
         </dependency>
 
     </dependencies>

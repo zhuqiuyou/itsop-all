@@ -1,6 +1,10 @@
 server:
   port: 9300
 
+swagger:
+  #是否开启swagger
+  enable: true
+
 spring:
   application:
     name: itsop-webapi-server

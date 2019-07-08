@@ -2,26 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.clouds.zh.common</groupId>
         <artifactId>itsop-common</artifactId>
+        <groupId>com.clouds.zh.common</groupId>
         <version>${itsop.version}</version>
     </parent>
-
-    <artifactId>itsop-common-utils</artifactId>
+    <groupId>com.clouds.zh.common.modules</groupId>
+    <artifactId>itsop-common-modules</artifactId>
     <version>${itsop.version}</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.8</version>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>itsop-common-domain-user</module>
+    </modules>
 
 </project>
