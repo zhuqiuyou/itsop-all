@@ -13,7 +13,6 @@
     <version>${itsop.version}</version>
 
     <dependencies>
-
         <!-- Spring Boot Begin -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

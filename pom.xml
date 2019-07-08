@@ -4,19 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.clouds.zh</groupId>
-    <artifactId>itsop-all</artifactId>
-    <version>1.0-SNAPSHOT</version>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.6.RELEASE</version>
     </parent>
+
+    <groupId>com.clouds.zh</groupId>
+    <artifactId>itsop-all</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <name>itsop-all</name>
     <url>https://github.com/zhuqiuyou/itsop-all</url>
 
     <properties>
+
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -26,15 +29,18 @@
         <zipkin.version>2.10.1</zipkin.version>
         <spring-boot-admin.version>2.1.6</spring-boot-admin.version>
         <org.jolokia.version>1.6.2</org.jolokia.version>
-
         <!-- Java工具包 -->
         <hutool.version>4.5.16</hutool.version>
+        <lombok.version>1.18.8</lombok.version>
 
+        <!-- mysql 驱动 -->
         <mysql.version>6.0.6</mysql.version>
-        <druid-spring-boot.version>1.1.18</druid-spring-boot.version>
         <!-- mbyatis-plus -->
+        <druid-spring-boot.version>1.1.18</druid-spring-boot.version>
         <mbyatis.plus.version>3.1.2</mbyatis.plus.version>
-
+        <mybatis-plus-boot.version>3.1.2</mybatis-plus-boot.version>
+        <!-- pagehelper -->
+        <pagehelper-spring-boot.version>1.2.12</pagehelper-spring-boot.version>
     </properties>
 
     <modules>
@@ -137,6 +143,35 @@
                 <version>${itsop.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-spring-boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
