@@ -16,6 +16,12 @@ spring:
     admin:
       client:
         url: http://localhost:8084
+  redis:
+    # Redis服务器地址
+    host: 192.168.0.101
+    # Redis服务器连接端口
+    port: 16379
+    timeout: 2000ms
 
 eureka:
   client:

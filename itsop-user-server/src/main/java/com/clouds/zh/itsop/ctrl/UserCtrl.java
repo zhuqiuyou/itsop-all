@@ -17,6 +17,12 @@ public class UserCtrl {
 
     @GetMapping("/getUserName")
     public String getUserName(@RequestParam(name = "username",required = true) String username) {
+/*        try {
+            Thread.sleep(50000);
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }*/
+
         return String.format("Hi，your username is : %s i am from port : %s", username, port);
     }
 }

@@ -12,7 +12,6 @@
     <groupId>com.clouds.zh</groupId>
     <artifactId>itsop-eureka-server</artifactId>
     <packaging>jar</packaging>
-    <version>${itsop.version}</version>
 
 
     <dependencies>

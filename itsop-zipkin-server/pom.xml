@@ -13,7 +13,6 @@
     <groupId>com.clouds.zh</groupId>
     <artifactId>itsop-zipkin-server</artifactId>
     <packaging>jar</packaging>
-    <version>${itsop.version}</version>
 
     <dependencies>
 

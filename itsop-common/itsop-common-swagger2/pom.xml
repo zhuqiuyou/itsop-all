@@ -10,7 +10,6 @@
     </parent>
 
     <artifactId>itsop-common-swagger2</artifactId>
-    <version>${itsop.version}</version>
     <name>itsop-common-swagger2</name>
     <packaging>jar</packaging>
 

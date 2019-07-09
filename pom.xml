@@ -32,7 +32,8 @@
         <!-- Java工具包 -->
         <hutool.version>4.5.16</hutool.version>
         <lombok.version>1.18.8</lombok.version>
-
+        <fastjson.version>1.2.58</fastjson.version>
+        <jackson.version>2.9.9</jackson.version>
         <!-- mysql 驱动 -->
         <mysql.version>6.0.6</mysql.version>
         <!-- mbyatis-plus -->
@@ -172,6 +173,14 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

@@ -1,8 +1,10 @@
 package com.clouds.zh.itsop.common.module.user;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -64,6 +66,7 @@ public class User implements Serializable {
     /**
      * 创建时间
      */
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
     @TableField("add_date")
     private LocalDateTime addDate;
 
@@ -76,6 +79,7 @@ public class User implements Serializable {
     /**
      * 最近一次登录时间
      */
+    @JSONField(format="yyyy-MM-dd HH:mm:ss")
     @TableField("login_date")
     private LocalDateTime loginDate;
 

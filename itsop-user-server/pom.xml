@@ -13,7 +13,6 @@
     <groupId>com.clouds.zh</groupId>
     <artifactId>itsop-user-server</artifactId>
     <packaging>jar</packaging>
-    <version>${itsop.version}</version>
 
     <dependencies>
         <!-- Spring Boot Begin -->
@@ -57,9 +56,16 @@
             <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
 
+        <!-- itsop common jar -->
+
         <dependency>
             <groupId>com.clouds.zh.common</groupId>
             <artifactId>itsop-common-mapper</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.clouds.zh.common</groupId>
+            <artifactId>itsop-common-redis</artifactId>
         </dependency>
 
         <dependency>

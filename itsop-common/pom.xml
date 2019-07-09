@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.clouds.zh.common</groupId>
     <artifactId>itsop-common</artifactId>
-    <version>${itsop.version}</version>
     <packaging>pom</packaging>
 
 

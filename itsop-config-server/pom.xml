@@ -10,7 +10,6 @@
     </parent>
     <artifactId>itsop-config-server</artifactId>
     <packaging>jar</packaging>
-    <version>${itsop.version}</version>
 
     <dependencies>
         <!-- Spring Boot Begin -->

@@ -13,7 +13,6 @@
     <groupId>com.clouds.zh</groupId>
     <artifactId>itsop-gateway-server</artifactId>
     <packaging>jar</packaging>
-    <version>${itsop.version}</version>
 
     <dependencies>
         <!-- Spring Boot Begin -->
