@@ -32,7 +32,7 @@
         <!-- Java工具包 -->
         <hutool.version>4.5.16</hutool.version>
         <lombok.version>1.18.8</lombok.version>
-        <fastjson.version>1.2.58</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <jackson.version>2.9.9</jackson.version>
         <!-- mysql 驱动 -->
         <mysql.version>6.0.6</mysql.version>
